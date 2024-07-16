@@ -1,0 +1,16 @@
+// Define the LED pin
+const int ledPin = 7;
+
+// Define the blink interval in milliseconds (1000ms = 1 second)
+const long interval = 1000; 
+
+void setup() {
+  pinMode(ledPin, OUTPUT); 
+}
+
+void loop() {
+  digitalWrite(ledPin, HIGH);   // Turn the LED on
+  delay(interval);              // Wait for the specified interval
+  digitalWrite(ledPin, LOW);    // Turn the LED off
+  delay(interval);             
+}
